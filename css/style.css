@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3a89fc;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  gap: 20px;
+}
+.box {
+  display: flex;
+  flex-flow: column wrap;
+  width: 35%;
+  height: 50%;
+  background-color: whitesmoke;
+  box-shadow: 0 0 18px -5px rgb(34, 34, 34);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 3px;
+}
+.box h1 {
+  font-size: 22px;
+  color: rgb(49, 49, 49);
+}
+.box form {
+  gap: 10px;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.box form input {
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  height: 80%;
+  width: 85%;
+  text-align: center;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.box form input[type="button"] {
+  background-color: rgb(226, 226, 226);
+  font-weight: bold;
+  border: none;
+}
+
+.box form input[type="button"]:hover {
+  background-color: rgb(210, 210, 210);
+  color: #0066ff;
+}
+
+.box form input[type="button"]:active {
+  transition: none;
+  opacity: 0.5;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+
+.box form input[type="number"]:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#resultbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(141, 141, 141);
+  font-size: 30px;
+  width: 30%;
+  height: 15%;
+  background-color: whitesmoke;
+  box-shadow: 0 0 18px -8px rgb(34, 34, 34);
+  transition: all 0.5s;
+  opacity: 0;
+  transition-delay: 200ms;
+}
